@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>JOLLY</title>
+	<style type="text/css">
+		*{
+			margin: 0;
+			padding: 0;
+			box-sizing: border-box;
+		}
+
+		nav{
+			background-color: black;
+			position: fixed;
+			/*top: 0;*/
+			width: 100%;
+			color: white;
+			z-index: 3;
+			margin-bottom: 20px;
+		}
+
+		ul{
+			list-style-type: none;
+		}
+
+		nav li{
+			text-align: center;
+			overflow: hidden;
+			float: left;
+		}
+		nav li a{
+			display: block;
+			padding: 15px;
+			text-decoration: none;
+			color: white;
+		}
+
+		li a{
+			display: block;
+			text-decoration: none;
+			color: white;
+		}
+		.container{
+				position: relative;
+				text-align: center;
+				background-image: url(flower.jpg);
+				color: white;
+				height: 70vh;
+				/*top: 45px;*/
+				padding: 100px;
+				line-height: 50px;
+		}
+
+		/*.container-items{
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			/*transform: translate(50%,50%);*/
+			/*line-height: 40px;*/
+		}*/
+
+		.images1{
+				padding: 100px;
+				text-align: center;
+
+		}
+		
+		.container1{
+			background-color: black;
+			display: flex;
+			flex-direction: row;
+			flex-wrap: wrap;
+			justify-content: space-around;
+			align-items: center;
+			text-align: left;
+			color: white;
+			height: 200px;
+		}
+
+		.container2{
+			/*background-color: black;*/
+			display: flex;
+			flex-direction: row;
+			flex-wrap: wrap;
+			justify-content: space-around;
+			align-items: center;
+
+			text-align: left;
+			color: black;
+		}
+
+		.container p{
+					font-size: 20px;
+		}
+		/*.boxs{
+			width: 200px;
+			height: 200px;
+			background-color: cadetblue;
+		}*/
+		.box{
+			/*background-color:black;*/
+			max-width: 500px;
+			/*height: 300px;
+*/			padding: 10px;
+			text-align: left;
+			align-self: center;
+
+		}
+		.container2 img{
+			width: 200px;
+			height: 200px;
+		}
+		.images1{
+				text-align: center;
+				background-color: black;
+				color: white;
+				line-height: 50px;
+			}
+		.images1 a{
+			padding: 10px 20px;
+			text-align: center;
+			/*line-height: 20px;*/
+			text-decoration: none;
+			background-color: red;
+			color: white;
+			font-size: 18px;
+			margin: 20px 0;
+		}
+		.images1 p{
+				color: white;
+				font-size: 20px;
+				text-align: center;
+				max-width: 80%;
+				margin: 0 auto;
+		}
+		.images2{
+				color: black;
+				text-align: center;
+				line-height: 50px;
+		}
+		.images2 h2{
+					padding: 40px;
+		}
+		.images2 p{
+					font-size: 20px;
+					padding: 20px;
+		}
+		 .images2 a{
+		 	display: block;
+		 	width: 140px;
+
+		 	margin: 0 auto;
+				text-decoration: none;
+				padding: 0 10px;
+			/*	line-height: 70px;*/
+				background-color: darkblue;
+				color: white;
+			}
+			/*.images2 img{
+					position: relative;
+					bottom: 50px;
+			}
+*/		.box img {
+			width: 200px;
+		}
+		.images3{
+			text-align: center;
+			background-image: url(tortise.jpg);
+			height: 400px;
+			color: white;
+			line-height: 40px;
+		}
+		.images3 h2{
+				padding: 50px;
+		}
+		.images3 p{
+					padding: 5px;
+					font-size: 20px;
+		}
+		/*.three{
+			order: 1;
+			flex-grow: 8;
+			background-color: red;
+		}
+
+		.three{
+			order: 3;
+			flex-shrink: 8;
+			background-color: red;
+		}
+		.boxscontainer{
+			display: flex;
+			flex-direction: row;
+			/*flex-wrap: wrap;*/
+			color: white;
+		}
+
+		/*.boxscontainer .grow{
+			background-color: red;
+			flex: 0 10 400px;
+		}
+		*/
+		.be{
+			
+			line-height: 40px;
+		}
+		.be h1{
+			padding: 10px;
+		}
+		.be p{
+			line-height: 40px;
+		}
+		.be a{
+			 text-decoration: none;
+			 color: black;
+		}
+		.p{
+			color: white;
+			background-color: black;
+			text-align: center;
+			/*position: relative;
+			top: 200px;
+			right: 500px;*/
+			padding:20px;
+			border-top: 1px solid white;
+			
+		}
+		img{
+			width: 100%;
+		}
+
+		.house{
+			max-width: 80%;
+			margin: 0 auto;
+		}
+
+		@media screen and (max-width:700px){
+			.container1{
+				display: block;
+				padding: 20px;
+				/*flex-direction: row;*/
+			}
+			/*.box{
+				display: block;
+				width: 100%;
+				text-align: left;
+			}*/
+
+		}
+	</style>
+</head>
+<body>
+	
+	  <nav>
+		<ul>
+			<li><a href="">myTunes</a></li>		
+			<li><a href="">Overview</a></li>
+			<li><a href="">Music</a></li>
+			<li><a href="">Giftcard</a></li>
+		</ul>
+	</nav>
+
+	<div class="container">
+		<div class="container-items">
+			<div class="house">
+				<h1>myTunes</h1>
+		<h1>Your music,movies,and TV shows take center stage.</h1>
+		<p> myTunes is the best way to organize and enjoy the music, movies, and TV shows you already have — and shop for the ones you want. Enjoy all the entertainment myTunes has to offer on your Mac and PC.</p>
+			</div>
+		
+	</div>
+	</div>
+
+<div class="images1">
+	
+		
+	<h1>Music</h1>
+	<h2>45 million songs. Zero ads.</h2>
+		<p>Stream over 45 million songs, ad-free. Or download albums and tracks to listen to offline. All the music in your personal myTunes library — no matter where it came from — lives right alongside the Orange Music catalog. Start your free three-month trial with no commitment, and cancel anytime.</p>
+		<a href="">Start Your trial Now</a></p>
+	<p>Orange Music is available in myTunes, and for iOS and Android devices.</p>		
+<img src="./mockup1.png">
+</div>
+
+<div class="images2">
+	<div class="house">
+	<h2>The movie and TV collection you always wished for. Granted.</h2>
+	<p>
+		With over 100,000 movies and TV shows to choose from, there’s always something great to watch on myTunes and if you watch on Orange TV 4K, you’ll be able to enjoy a tremendous selection of your favorite content in 4K HDR. So get ready to enjoy episodes of your favorite TV shows or hit movies you’ve been waiting to see — anytime, anywhere. Just tap to play, or even download if you’re going somewhere you won’t have Wi-Fi.
+		</p>
+		<a href="">Read More</a>
+		
+				<img src="./mockup2.png">
+			</div>
+</div>	
+	<div class="images3">
+		<div class="house">
+				<h2>A world of entertainment. Available wherever you are.</h2>
+	<p>
+		Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem veniam nobis, nisi ut expedita, doloribus reprehenderit explicabo non velit repellat alias saepe inventore repellendus? Molestias suscipit eos tempora? Quae quaerat cumque in veritatis impedit dolorum sapiente recusandae minima quo aperiam quam, excepturi quasi totam ad quas? Ipsam laudantium soluta delectus!
+
+</p>
+		</div>
+		
+	</div>
+
+
+<div class="container2">
+	<div class="box"> 
+		<img src="./cards.png" >
+	</div>
+	<div class="box be"> 
+		<h2>Gift Cards</h2>
+		<p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Neque expedita tempore quasi omnis a aut et totam illo fuga accusamus dolorum vero, ut harum consectetur. Minima molestias officiis culpa non sed dicta itaque. Et aliquam illo obcaecati molestias veritatis porro.</p>
+		<hr>
+		<p>Already have an Orange MyTunes Music Gift Card?</p>
+		<a href="">Redeem</a>
+	</div>
+	
+	
+</div>
+<!-- 
+<div class="boxscontainer">
+	<div class="boxs ">1</div>
+	<div class="boxs">2</div>
+	<div class="boxs grow" >3</div>
+	<div class="boxs">4</div>
+</div> -->
+<div class="container1">
+	<div class="box"> 
+		<h2>Shop & Learn</h2>
+		<hr>
+		<ul>
+			<li><a href="">myTunes</a></li>		
+			<li><a href="">Overview</a></li>
+			<li><a href="">Music</a></li>
+			<li><a href="">Giftcard</a></li>
+		</ul>
+	</div>
+
+	<div class="box"> 
+		<h2>Orange Store</h2>
+		<hr>
+		<ul>
+			<li><a href="">Find a store</a></li>		
+			<li><a href="">Today at Orange</a></li>
+			<li><a href="">Orange Camp</a></li>
+			<li><a href="">Financing</a></li>
+			<li><a href="">Order Status</a></li>
+		</ul>
+	</div>
+
+	<div class="box three"> 
+		<h2>Education & Business </h2>
+		<hr>
+		<ul>
+			<li><a href="">Orange & Education</a></li>		
+			<li><a href="">Shop For College</a></li>
+			<li><a href="">Orange & Business</a></li>
+			<li><a href="">Shop For Business</a></li>
+			<li><a href="">Jobs</a></li>
+		</ul>
+	</div>
+		<div class="box three"> 
+				<h2>About Orange </h2>
+					<hr>
+						<ul>
+				<li><a href="">Newsroom</a></li>		
+				<li><a href="">Orange Leadership</a></li>
+				<li><a href="">Investors</a></li>
+				<li><a href="">Events</a></li>
+				<li><a href="">Contact Orange</a></li>
+		</ul>
+	</div>
+
+	</div>
+
+	<!-- <div class="box"> 
+		<h2>Orange Store</h2>
+		<ul>
+			<li><a href="">Find a store</a></li>		
+			<li><a href="">Today at Orange</a></li>
+			<li><a href="">Orange Camp</a></li>
+			<li><a href="">Financing</a></li>
+			<li><a href="">Order Status</a></li>
+		</ul>
+	</div>
+
+	<div class="box"> 
+		<h2>Orange Store</h2>
+		<ul>
+			<li><a href="">Find a store</a></li>		
+			<li><a href="">Today at Orange</a></li>
+			<li><a href="">Orange Camp</a></li>
+			<li><a href="">Financing</a></li>
+			<li><a href="">Order Status</a></li>
+		</ul>
+	</div>
+
+	<div class="box"> 
+		<h2>Orange Store</h2>
+		<ul>
+			<li><a href="">Find a store</a></li>		
+			<li><a href="">Today at Orange</a></li>
+			<li><a href="">Orange Camp</a></li>
+			<li><a href="">Financing</a></li>
+			<li><a href="">Order Status</a></li>
+		</ul>
+	</div>
+	<div class="box two"> 
+		<h2> 2 Orange Store</h2>
+		<ul>
+			<li><a href="">Find a store</a></li>		
+			<li><a href="">Today at Orange</a></li>
+			<li><a href="">Orange Camp</a></li>
+			<li><a href="">Financing</a></li>
+			<li><a href="">Order Status</a></li>
+		</ul>
+	</div>
+	<div class="box">Education & Business</div>
+	<div class="box">4</div>
+	 --><!-- </div> -->
+
+	<div class="p">
+		<p>Copyright &copy 2019 Orange myTunes</p>
+	</div>
+
+</body>
+</html>
